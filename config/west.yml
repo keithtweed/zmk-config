@@ -4,13 +4,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: keithtweed
+      url-base: https://github.com/keithtweed
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: ''
-      url: https://github.com/petejohanson/blank-slate-zmk-module/
-      revision: core-zephyr-hwmv2-update
-      path: modules/
+    - name: blank-slate-zmk-module
+      url: https://github.com/keithtweed/blank-slate-zmk-module
+      revision: main
+      path: modules/blank-slate-zmk-module
   self:
     path: config
