@@ -77,6 +77,8 @@
             status = "reserved";
         };
 
+    };
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
