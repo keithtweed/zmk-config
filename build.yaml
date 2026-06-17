@@ -20,6 +20,21 @@
 ---
 
 include:
-  - board: blank_slate
+#  - board: blank_slate
+#    snippet: studio-rpc-usb-uart
+#    cmake-args: -DCONFIG_ZMK_STUDIO=y
+#    artifact_name: blank_slate_studio
+  - board: xiao_ble//zmk
+    shield: blank_slate_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: xiao_blank_slate_dongle_studio
+  - board: xiao_ble//zmk
+    shield: settings_reset
+    artifact-name: xiao_settings_reset
+  - board: blank_slate
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: blank_slate_with_dongle
+  - board: blank_slate
+    shield: settings_reset
+    artifact-name: blank_slate_settings_reset
