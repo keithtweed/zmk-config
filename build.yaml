@@ -25,9 +25,9 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact_name: blank_slate_studio
   - board: xiao_ble//zmk
-    shield: blank_slate_dongle
+    shield: blank_slate_dongle dongle_display
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_DONGLE_DISPLAY_WPM=y 
     artifact-name: xiao_blank_slate_dongle_studio
   - board: xiao_ble//zmk
     shield: settings_reset
