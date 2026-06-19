@@ -19,6 +19,6 @@ manifest:
       path: modules/blank-slate-zmk-module
     - name: zmk-dongle-display
       remote: englmax
-      version: main
+      revision: main
   self:
     path: config
